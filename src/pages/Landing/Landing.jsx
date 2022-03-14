@@ -4,7 +4,7 @@ const Landing = ({user}) => {
   return (
     <main className={styles.container}>
       <h1>
-        hello, {user ? user.name : "friend"}
+        Todays Top Hacks
       </h1>
     </main>
   )
