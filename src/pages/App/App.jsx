@@ -7,6 +7,7 @@ import Landing from '../Landing/Landing'
 import Users from '../Users/Users'
 import * as authService from '../../services/authService'
 
+
 const App = () => {
 	const history = useHistory()
 	const [user, setUser] = useState(authService.getUser())
