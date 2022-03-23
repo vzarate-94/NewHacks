@@ -3,15 +3,15 @@ import Profile from '../../components/Profile/Profile'
 import DarkMode from '../../components/DarkMode/DarkMode'
 import Feed from '../../components/Feed/Feed'
 
-const Landing = ({user}) => {
+const Landing = () => {
   return (
     <main className={styles.container}>
-      <Profile />
-      <DarkMode />
-      <Feed />
       <h1>
         Todays Top Hacks
       </h1>
+      <Profile />
+      <DarkMode />
+      <Feed />
     </main>
   )
 }
