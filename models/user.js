@@ -3,12 +3,26 @@ import bcrypt from 'bcrypt'
 const SALT_ROUNDS = 6
 
 const userSchema = new mongoose.Schema({
-  name: String,
-  email: { type: String, required: true, lowercase: true, unique: true },
-  password: String,
-}, {
-  timestamps: true,
-})
+  name: {
+    type: String,
+    required: true,
+    unique: true
+  },
+  email: { 
+    type: String, 
+    required: true, 
+    lowercase: true, 
+    unique: true, 
+    index: true},
+  password: {
+    type: String,
+    required: true
+  },
+  posts:[{
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Post'
+  }]
+}, {timestamps: true,})
 
 userSchema.set('toJSON', {
   transform: function (doc, ret) {
