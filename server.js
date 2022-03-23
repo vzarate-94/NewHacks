@@ -6,6 +6,7 @@ import logger from 'morgan'
 import cors from 'cors'
 
 import { router as usersRouter } from './routes/users.js'
+import { router as postsRouter } from './routes/posts.js'
 import { router as authRouter } from './routes/auth.js'
 
 import './config/database.js'
@@ -20,6 +21,7 @@ app.use(express.json())
 
 app.use('/api/auth', authRouter)
 app.use('/api/users', usersRouter)
+app.use('/api/posts', postsRouter)
 
 
 app.get("/*", function (req, res) {
