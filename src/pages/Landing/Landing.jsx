@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { getPaginatedPosts } from '../../services/postService'
-import styles from './Landing.module.css'
-import Profile from '../../components/Profile/Profile'
-import DarkMode from '../../components/DarkMode/DarkMode'
+
 import Feed from '../../components/Feed/Feed'
 
 const Landing = () => {
@@ -18,16 +16,22 @@ const Landing = () => {
     return () => { setPosts([]) }
   }, [currentPage])
 
+  const changePage = (e) => {
+    e.preventDefault()
+    setCurrentPage(currentPage + parseInt(e.target.value))
+  }
+
   return (
-    <main className={styles.container}>
-      <h1>
-        Todays Top Hacks
-      </h1>
-      <Profile />
-      <DarkMode />
-      <Feed />
-    </main>
-  )
+    <div className="layout"> 
+        <Feed
+            posts={posts}
+            setPosts={setPosts}
+            currentPage={currentPage}
+            changePage={changePage}
+        />
+
+    </div>
+)
 }
  
 export default Landing

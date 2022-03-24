@@ -1,10 +1,11 @@
 import React from 'react'
-import Post from '../Post/PostCard.jsx'
+import PostList from '../Post/PostList.jsx'
 
-function Feed() {
+function Feed(props) {
   return (
     <div>
-      <Post />
+      <PostList
+        post={props.posts} />
     </div>
   )
 }
