@@ -1,5 +1,5 @@
 import React from 'react'
-import Post from '../Post/Post.jsx'
+import Post from '../Post/PostCard.jsx'
 
 function Feed() {
   return (
