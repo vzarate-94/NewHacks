@@ -15,7 +15,13 @@ const postSchema = new Schema({
     type: String, 
     required: true
   },
-  postUrl: {
+  hackDiscription: {
+    type: String,
+  },
+  imageUrl: {
+    type: String,
+  },
+  videoUrl: {
     type: String,
   },
   added_by: { 

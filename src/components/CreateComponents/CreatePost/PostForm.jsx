@@ -7,21 +7,16 @@ const PostForm = (props) => {
         <div className="create-form-container">
             <form className="create-form">
                 <div className="question-prompt">
-                    <label>Enter your question</label>
+                    <label>Enter your Hack</label>
                 </div>
                 <input
                     required
                     autoComplete='off'
-                    placeholder="Question"
-                    name="question"
+                    placeholder="Title"
+                    name="title"
                 />
 
                 <div className="border"></div>
-
-                <div className="code-prompt">
-                    <label>Codeblock</label>
-                    <button type="button" id="plus-button">+</button>
-                </div>
 
                 <div className="border"></div>
                 <button type="submit">Submit</button>
