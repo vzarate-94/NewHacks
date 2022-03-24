@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import { Route, Redirect, useHistory } from 'react-router-dom'
-import NavBar from '../../components/NavBar/NavBar'
-import Signup from '../Signup/Signup'
-import Login from '../Login/Login'
-import Landing from '../Landing/Landing'
-import Users from '../Users/Users'
-import * as authService from '../../services/authService'
+import NavBar from '../components/NavBar/NavBar'
+import Signup from '../pages/Signup/Signup'
+import Login from '../pages/Login/Login'
+import Landing from '../pages/Landing/Landing'
+import Users from '../pages/Users/Users'
+import * as authService from '../services/authService'
 
 
 const App = () => {
