@@ -25,24 +25,29 @@ const App = () => {
 	return (
 		<>
 			<NavBar user={user} handleLogout={handleLogout}/>
+
 			<Route exact path='/'>
 				<Landing user={user} />
 			</Route>
+
 			<Route exact path='/signup'>
 				{user ? 
 					<Redirect to='/' /> : 
 					<Signup handleSignupOrLogin={handleSignupOrLogin}/>
 				}
 			</Route>
+
 			<Route exact path='/login'>
 				{user ? 
 					<Redirect to='/' /> : 
 					<Login handleSignupOrLogin={handleSignupOrLogin}/>
 				}
 			</Route>
+
 			<Route exact path='/users'>
 				{user ? <Users /> : <Redirect to='/login' />}
 			</Route>
+			
 		</>
 	)
 }

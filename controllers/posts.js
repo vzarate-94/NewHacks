@@ -30,7 +30,19 @@ const paginatedIndex = async (req, res) => {
   }
 }
 
+const show = async (req, res) => {
+  try {
+    const post = await Post.findById(req.params.id)
+      .populate('added_by')
+      .populate('comments.commenter')
+    return res.status(200).json(post) 
+  } catch (error) {
+    return res.status(500).send(error.message, 'Could not locate post')
+  }
+}
+
 export {
   create,
-  paginatedIndex
+  paginatedIndex,
+  show,
 }

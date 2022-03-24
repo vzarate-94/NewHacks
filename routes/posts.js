@@ -6,6 +6,7 @@ const router = Router()
 
 // ========= Public Routes ========= 
 router.get('/:page', postCtrl.paginatedIndex)
+router.get('/details/:id', postCtrl.show)
 
 
 // ========= Protected Routes ========= 
