@@ -11,6 +11,17 @@ function getAllUsers() {
   .then(res => res.json())
 }
 
+const getTopUsers = async () => {
+  try {
+      const res = await fetch(`${BASE_URL}top-users`, { mode: "cors" })
+      const data = await res.json()
+      return data
+  } catch (error) {
+      throw error
+  }
+}
+
 export {
   getAllUsers,
+  getTopUsers
 }

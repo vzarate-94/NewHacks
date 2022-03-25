@@ -8,7 +8,7 @@ const CreatePostHeader = (props) => {
             <div className="header">
                 <h3>Create Post</h3>
                 <div className="header-buttons">
-                    <button>Cancel</button>
+                <button onClick={() => props.setToggleFeed(true)}>Cancel</button>
                 </div>
             </div>
         </div>

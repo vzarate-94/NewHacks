@@ -1,12 +1,13 @@
 import mongoose from 'mongoose'
 import bcrypt from 'bcrypt'
-const SALT_ROUNDS = 6
 
-const userSchema = new mongoose.Schema({
+const SALT_ROUNDS = 6
+const Schema = mongoose.Schema
+
+const userSchema = new Schema({
   name: {
     type: String,
     required: true,
-    unique: true
   },
   email: { 
     type: String, 

@@ -1,37 +1,14 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import './NavBar.css'
 
-const NavBar = ({ user, handleLogout }) => {
+const NavBar = (props) => {
 	return (
-		<nav>
-			<div>
-			{user ? (
-				<ul>
-					<li>Welcome, {user.name}</li>
-					<li>
-						<NavLink to="/">Home</NavLink>
-					</li>
-					<li>
-						<NavLink to='' onClick={handleLogout}>Log out</NavLink>
-					</li>
-					<li>
-						<NavLink to="/users">Users</NavLink>
-					</li>
-				</ul>
-			) : (
-				<ul>
-					<li>
-						<NavLink to="/">Home</NavLink>
-					</li>
-					<li>
-						<NavLink to="/login">Log In</NavLink>
-					</li>
-					<li>
-						<NavLink to="/signup">Sign Up</NavLink>
-					</li>
-				</ul>
-			)}
-			</div>
+		<nav className='nav-bar'>
+			<Link className='logo' to='/'>Home</Link>
+			<Link to="/signup">Sign Up</Link>
+
+      <Link to="/login">LogIn</Link>
 		</nav>
 	)
 }

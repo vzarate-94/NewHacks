@@ -1,16 +1,16 @@
 import React from 'react'
-import PostList from '../Post/PostList.jsx'
-import Pagination from './Pagination.jsx'
 
-function Feed(props) {
+// Components
+import PostList from '../Post/PostList'
+import Pagination from './Pagination'
+
+const Feed = (props) => {
   return (
     <>
-        <Pagination
-            {...props}
-        />
+        <Pagination {...props} />
         <div className="spacing-block" />
         <PostList
-            posts={props.posts}
+            {...props}
         />
     </>
   )
