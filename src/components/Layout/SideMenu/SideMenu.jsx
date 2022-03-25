@@ -7,7 +7,7 @@ const SideMenu = ({ toggleFeed, setToggleFeed, currentUser, handleLogout }) => {
 
     const handleRedirect = () => {
         setToggleFeed(!toggleFeed)
-        history.push('/home')
+        history.push('/')
     }
 
     return (
@@ -23,7 +23,7 @@ const SideMenu = ({ toggleFeed, setToggleFeed, currentUser, handleLogout }) => {
                         <>
                             <Link to="/profile"><button>Profile</button></Link>
                             <button onClick={() => handleRedirect()}>
-															  {toggleFeed ? 'Create Post' : 'Feed'}
+								{toggleFeed ? 'Create Post' : 'Feed'}
 														</button>
                             <button onClick={handleLogout}>Sign Out</button>
                         </>

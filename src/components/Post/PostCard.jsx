@@ -17,9 +17,9 @@ return (
         </div>
 
         <div className="question-container">
-            <p>console.log{props.posts._id}</p>
-            <p>{props.posts.hackDiscription}</p>
-            <p>can u</p>
+            <p>{props.post.title}</p>
+            <p>{props.post.hackDescription}</p>
+            
         </div>
 
         <div className="comment-link">

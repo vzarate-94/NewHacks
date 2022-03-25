@@ -56,20 +56,22 @@ const App = () => {
 
 		<Switch>
 			<Route exact path='/'>
-				<Landing 
+				<Landing
+				  currentUser={currentUser} 
 					handleLogout={handleLogout}
 					toggleFeed={toggleFeed}
 					setToggleFeed={setToggleFeed}
 					/>
+					<h1>WOrking?</h1>
 			</Route>
 
-			<Route exact path='/signup'>
+			<Route path='/signup'>
 				
 					<Signup handleSignupOrLogin={handleSignupOrLogin}/>
 				
 			</Route>
 
-			<Route exact path='/login'>
+			<Route path='/login'>
 					<Login handleSignupOrLogin={handleSignupOrLogin}/>
 			</Route>
 

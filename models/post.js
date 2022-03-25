@@ -15,7 +15,7 @@ const postSchema = new Schema({
     type: String, 
     required: true
   },
-  hackDiscription: {
+  hackDescription: {
     type: String,
   },
   imageUrl: {
