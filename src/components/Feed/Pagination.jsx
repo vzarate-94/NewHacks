@@ -31,7 +31,7 @@ const Pagination = (props) => {
             setHasSearchRun(true)
             const posts = await search(keyword)
             setPosts(posts)
-            history.push('/home')
+            history.push('/')
         } catch (error) {
             throw error
         }

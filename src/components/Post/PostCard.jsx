@@ -19,7 +19,7 @@ return (
         <div className="question-container">
             <p>{props.post.title}</p>
             <p>{props.post.hackDescription}</p>
-            
+            <p>Created by: {props.post._id}</p>
         </div>
 
         <div className="comment-link">
