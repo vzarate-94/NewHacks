@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import ReactPlayer from 'react-player'
+
 import '../../styles/Card.css'
 
 // Components
@@ -21,13 +22,13 @@ return (
         </div>
 
         <div className="question-container">
-            <p>{props.post.title}</p>
+            <h3>{props.post.title}</h3>
             <p>{props.post.hackDescription}</p>
-            <p>Created by: {props.post._id}</p>
         </div>
+        {props.post.videoUrl? 
         <div>
-            <ReactPlayer url={props.post.videoUrl} />
-        </div>
+            <ReactPlayer url={props.post.videoUrl} width="100%"/>
+        </div>: <p>.</p>}
 
         <div className="comment-link">
 
