@@ -10,7 +10,9 @@ import NavBar from '../components/NavBar/NavBar'
 import Signup from '../pages/Auth/Signup'
 import Login from '../pages/Auth/Login'
 import Landing from '../pages/Landing/Landing'
-import Users from '../pages/Users/Users'
+
+import Profile from '../pages/Profile/Profile'
+import ProtectedRoute from '../components/misc/ProtectedRouter'
 
 
 
@@ -74,10 +76,13 @@ const App = () => {
 			<Route path='/login'>
 					<Login handleSignupOrLogin={handleSignupOrLogin}/>
 			</Route>
-
-			<Route exact path='/users'>
-				<Users /> 
-			</Route>
+			<ProtectedRoute authenticated={authenticated} path="/profile">
+          <Profile
+            currentUser={currentUser}
+            handleLogout={handleLogout}
+            setToggleFeed={setToggleFeed}
+          />
+        </ProtectedRoute>
 			
 			</Switch>
 		</div>

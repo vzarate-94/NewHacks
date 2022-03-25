@@ -5,7 +5,7 @@ const ProtectedRoute = ({ authenticated, children }) =>
     authenticated === true ? (
         <Route>{children}</Route>
     ) : (
-        <Redirect to="/home" />
+        <Redirect to="/" />
     )
 
 
