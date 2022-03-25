@@ -7,8 +7,8 @@ import { getUser, logout } from '../services/authService'
 
 // pages + components
 import NavBar from '../components/NavBar/NavBar'
-import Signup from '../pages/Signup/Signup'
-import Login from '../pages/Login/Login'
+import Signup from '../pages/Auth/Signup'
+import Login from '../pages/Auth/Login'
 import Landing from '../pages/Landing/Landing'
 import Users from '../pages/Users/Users'
 

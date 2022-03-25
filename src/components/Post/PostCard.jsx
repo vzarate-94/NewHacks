@@ -8,7 +8,10 @@ import PostActions from './PostActions'
 
 const PostCard = (props) => {
 
+    
+
 return (
+    
     <div className="post-card">
 
         <div className="card-header">
