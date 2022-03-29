@@ -27,7 +27,7 @@ return (
         </div>
         {props.post.videoUrl? 
         <div>
-            <ReactPlayer url={props.post.videoUrl} width="100%"/>
+            <ReactPlayer controls url={props.post.videoUrl} width="100%"/>
         </div>: <p>.</p>}
 
         <div className="comment-link">
