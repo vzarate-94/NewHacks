@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { useState} from 'react'
 
-function CreateComment() {
+const CreateComment = (props) => {
   return (
-    <div>CreateComment</div>
+    <form className='create-form' ></form>
   )
 }
 
