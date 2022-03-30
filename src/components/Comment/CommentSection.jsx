@@ -1,8 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-function CommentSection() {
+import CommentList from './CommentList'
+import CreateComment from '../CreateComponents/CreateComment/CreateComment'
+const CommentSection = (props) => {
   return (
-    <div>CommentSection</div>
+    <div className='comment-section'>
+      
+      <div className='header'>
+        <h3>Comment Section</h3>
+        <div className='header-buttons'></div>
+      </div>
+
+      <CreateComment />
+
+      <CommentList {...props}/>
+
+    </div>
   )
 }
 
