@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import Pagination from '../../Feed/Pagination'
 import './Leaderboard.css'
 
 // Services
@@ -25,7 +26,6 @@ const Leaderboard = (props) => {
 
     return (
         <div className="leaderboard">
-
             <div className="user-list-container">
                 <div className="user-list-header">
                     <h3>Top Users</h3>

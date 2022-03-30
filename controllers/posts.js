@@ -40,7 +40,7 @@ const searchPosts = async (req, res) => {
 }
 
 const paginatedIndex = async (req, res) => {
-  const limitNum = 16
+  const limitNum = 8
   const skipCount = parseInt(req.params.page) * parseInt(limitNum)
   try {
     const posts = await Post.find({})
