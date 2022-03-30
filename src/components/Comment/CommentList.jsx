@@ -1,9 +1,13 @@
 import React from 'react'
 
-function CommentList() {
+import CommentCard from './CommentCard'
+
+const CommentList = (props) => {
+
   return (
-    <div>CommentList</div>
+      <CommentCard />
   )
 }
+
 
 export default CommentList
