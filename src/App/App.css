@@ -28,7 +28,7 @@
   flex-direction: column;
   width: 20%;
   min-height: 100vh;
-  background: #7575d7;
+  background: rgb(255, 237, 237);
   padding: 10px 10px 94px 10px;
 }
 
@@ -38,7 +38,7 @@
   align-items: center;
   width: 30%;
   min-height: 100vh;
-  background: #4646b8;
+  background: rgb(255, 237, 237);
   padding: 10px 10px 94px 10px;
 }
 
