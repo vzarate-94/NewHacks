@@ -10,6 +10,7 @@ import NavBar from '../components/NavBar/NavBar'
 import Signup from '../pages/Auth/Signup'
 import Login from '../pages/Auth/Login'
 import Landing from '../pages/Landing/Landing'
+import PostDetails from '../pages/PostsDetails/PostDetails'
 
 import Profile from '../pages/Profile/Profile'
 import ProtectedRoute from '../components/misc/ProtectedRouter'
@@ -83,6 +84,16 @@ const App = () => {
             setToggleFeed={setToggleFeed}
           />
         </ProtectedRoute>
+
+				<Route path="/post/:id">
+          <PostDetails
+            currentUser={currentUser}
+            handleLogout={handleLogout}
+
+            toggleFeed={toggleFeed}
+            setToggleFeed={setToggleFeed}
+          />
+        </Route>
 			
 			</Switch>
 		</div>

@@ -26,9 +26,9 @@ return (
             <p>{props.post.hackDescription}</p>
         </div>
         {props.post.videoUrl? 
-        <div>
-            <ReactPlayer controls url={props.post.videoUrl} width="100%"/>
-        </div>: <p>.</p>}
+            <div>
+                <ReactPlayer controls url={props.post.videoUrl} width="100%"/>
+            </div>: <p>.</p>}
 
         <div className="comment-link">
 

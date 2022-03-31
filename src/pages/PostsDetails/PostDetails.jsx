@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from 'react'
-import { withRouter } from 'react-router-dom'
+import { withRouter, useParams} from 'react-router-dom'
 
 import {
   getPostById,
-  updatePost, 
   deletePost
 } from '../../services/postService'
 
 import PostCard from '../../components/Post/PostCard'
 import Layout from '../../components/Layout/Layout'
 import CommentSection from '../../components/Comment/CommentSection'
+import PostDetailsHeader from './PostDetailsHeader'
 
 const PostDetails = (props) => {
-  const { id } = props.match.params 
+  const { id } = useParams()
   const [post, setPost] = useState()
   const [commentArray, setCommentArray] = useState([])
 
@@ -25,15 +25,32 @@ const PostDetails = (props) => {
     }
   }
 
+  useEffect(() => {
+    const fetchPost = async () => {
+        try {
+            const post = await getPostById(id)
+            setTimeout(() => {
+                setPost(post)
+                setCommentArray(post.comments)
+            }, 1000)
+        } catch (error) {
+            throw error
+        }
+    }
+    fetchPost()
+    return () => { setPost(null) }
+}, [id])
+
   return (
     <Layout {...props}>
       <div className='layout'>
+      <PostDetailsHeader {...props} />
         <div className='post-details'>
           {post? 
           <>
             <PostCard
               post={post}
-              current={props.current.user}
+              currentUser={props.currentUser}
               handleDeletePost={handleDeletePost}
             />
             <CommentSection

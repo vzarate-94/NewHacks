@@ -7,7 +7,7 @@ const commentSchema = new Schema({
     type: String,
     Required: true
   },
-  commenter: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
+  commenter: { type: mongoose.Schema.ObjectId, ref: 'User' },
 }, { timestamps: true })
 
 const postSchema = new Schema({
