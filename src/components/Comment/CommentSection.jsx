@@ -12,7 +12,7 @@ const CommentSection = (props) => {
     try {
       const newComment = await createComment(props.post._id, formData)
       newComment.commenter = props.currentUser
-      props.setCommentArray([...props.CommentArray, newComment])
+      props.setCommentArray([...props.commentArray, newComment])
     } catch (error) {
       throw error
     }
@@ -38,8 +38,7 @@ const CommentSection = (props) => {
           <button
             onClick={() => 
             setToggleNewComment(!toggleNewComment)
-            }
-            >New Comment</button>
+            }>New Comment</button>
           }
       </div>
       {toggleNewComment &&

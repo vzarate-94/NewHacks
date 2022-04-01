@@ -11,7 +11,7 @@ const PostDetailsHeader = (props) => {
                 <div className="header-buttons">
                     <button onClick={() => props.history.push('/')}>
                         Back
-					</button>
+					            </button>
                 </div>
             </div>
         </div>

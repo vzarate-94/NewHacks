@@ -2,6 +2,7 @@ import React, { useState} from 'react'
 
 const CreateComment = (props) => {
 	const [text, setText] = useState('')
+	
 
 	const handleSubmit = (e) => {
 		e.preventDefault()
@@ -11,6 +12,7 @@ const CreateComment = (props) => {
 				commenter: props.currentUser._id
 			}
 			props.handleCreateComment(formData)
+			props.setToggleNewComment(false)
 	}
 
   return (

@@ -3,13 +3,16 @@ import '../../styles/Card.css'
 
 import CommentActions from './CommentActions'
 
-function CommentCard() {
+function CommentCard(props) {
   return (
     <div className="comment-card">
 
             <div className="card-header"></div>
-
-            <div className="question-container"></div>
+              <CommentActions 
+                {...props}/>
+            <div className="question-container">
+              <p>{props.comment.comment_text}</p>
+            </div>
 
             <div className="code-container"></div>
 
