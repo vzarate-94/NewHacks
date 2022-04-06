@@ -10,6 +10,8 @@ const CommentList = (props) => {
 						key={comment._id}
 						comment={comment}
 						{...props}
+						h1
+						
 				/>
 		))
 )
