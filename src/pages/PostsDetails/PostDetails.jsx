@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { withRouter, useParams} from 'react-router-dom'
+import './PostDetails.css'
 
 import {
   getPostById,
