@@ -4,7 +4,7 @@ import Users from '../Users/Users'
 function Profile(props) {
   return (
     <div>
-    <Users />
+    <Users {...props}/>
     </div>
   )
 }

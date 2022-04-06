@@ -1,5 +1,5 @@
 import React from 'react'
-
+import '../../App/App.css'
 
 //Components
 import Leaderboard from './Leaderboard/Leaderboard'
