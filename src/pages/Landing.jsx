@@ -72,6 +72,7 @@ const Landing = (props) => {
 
 
     return (
+
     <Layout {...props}>
         <div className="layout">
             {props.toggleFeed ?
@@ -99,6 +100,7 @@ const Landing = (props) => {
                 />
             }
         </div>
+        
     </Layout>
     )
     }

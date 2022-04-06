@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import ReactPlayer from 'react-player'
+import { TikTok } from 'react-tiktok'
 
 import '../../styles/Card.css'
 
@@ -25,10 +26,15 @@ return (
             <h3>{props.post.title}</h3>
             <p>{props.post.hackDescription}</p>
         </div>
-        {props.post.videoUrl? 
-            <div>
-                <ReactPlayer controls url={props.post.videoUrl} width="100%"/>
-            </div>: <p>.</p>}
+            {props.post.videoUrl? 
+                <div>
+                    <ReactPlayer controls url={props.post.videoUrl} width="100%"/>
+                </div>: <p>
+                        <TikTok url="https://www.tiktok.com/@scout2015/video/6718335390845095173" />
+                        </p>}
+            {/* {props.post.tiktokURl?
+                <div>
+                </div>: <p>.</p>} */}
 
         <div className="comment-link">
 
