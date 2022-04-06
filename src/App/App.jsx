@@ -9,7 +9,7 @@ import { getUser, logout } from '../services/authService'
 import NavBar from '../components/NavBar/NavBar'
 import Signup from '../pages/Auth/Signup'
 import Login from '../pages/Auth/Login'
-import Landing from '../pages/Landing/Landing'
+import Landing from '../pages/Landing'
 import PostDetails from '../pages/PostsDetails/PostDetails'
 
 import Profile from '../pages/Profile/Profile'

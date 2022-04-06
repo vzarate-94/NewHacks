@@ -9,12 +9,18 @@ const userSchema = new Schema({
     type: String,
     required: true,
   },
+  handle: {
+    type: String,
+    required: true,
+    unique: true,
+  },
   email: { 
     type: String, 
     required: true, 
     lowercase: true, 
     unique: true, 
-    index: true},
+    index: true
+  },
   password: {
     type: String,
     required: true

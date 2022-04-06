@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from 'react'
-import { usePrevious } from '../../hooks/usePrevious'
+import { usePrevious } from '../hooks/usePrevious'
 
 import {
     getPaginatedPosts,
     createPost,
     updatePost,
     deletePost
-} from '../../services/postService'
+} from '../services/postService'
 
 
-import Feed from '../../components/Feed/Feed'
-import CreatePost from '../../components/CreateComponents/CreatePost/CreatePost'
-import Layout from '../../components/Layout/Layout'
+import Feed from '../components/Feed/Feed'
+import CreatePost from '../components/CreateComponents/CreatePost/CreatePost'
+import Layout from '../components/Layout/Layout'
 
 const Landing = (props) => {
     const [posts, setPosts] = useState([])
