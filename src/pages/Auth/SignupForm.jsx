@@ -4,7 +4,6 @@ import './Auth.css'
 import * as authService from '../../services/authService'
 
 const SignupForm = (props) => {
-  const [popup, setPopup] = useState(false)
   const history = useHistory()
   const [authError, setAuthError] = useState(false)
   const [validForm, setValidForm] = useState(false)
@@ -15,10 +14,6 @@ const SignupForm = (props) => {
     password: '',
     passwordConf: '',
   })
-
-  const handlePopup = () => {
-    setPopup(!popup)
-}
 
   const handleChange = evt => {
     setFormData({ ...formData, [evt.target.name]: evt.target.value })
@@ -43,7 +38,7 @@ const SignupForm = (props) => {
 	}, [formData])
 
   return (
-    <div className='signup-page'>
+    <>
       <div className='left-container'>
         <div className='form-container'>
           <div className="title-container">
@@ -108,9 +103,16 @@ const SignupForm = (props) => {
               </Link>
             </div>
           </form>
+          <div className="redirect-container">
+                        <p>Already have an account?</p>
+                        <Link className="redirect-link" to="/login">
+                            <p>Login</p>
+                        </Link>
+
+                    </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
  

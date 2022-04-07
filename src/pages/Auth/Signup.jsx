@@ -10,14 +10,13 @@ const Signup = (props) => {
   }
 
   return (
-    <main className="container">
-      <h1>Sign Up</h1>
+    <div className='signup-page'>
       {message && <p>{message}</p> }
       <SignupForm 
         updateMessage={updateMessage}
         handleSignupOrLogin={props.handleSignupOrLogin}
       />
-    </main>
+    </div>
   )
 }
 
