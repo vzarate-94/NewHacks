@@ -4,11 +4,10 @@ import './Auth.css'
 
 const LoginPage = (props) => {
   return (
-    <main className='container'>
-      <h1>Log In</h1>
+    <div className='signup-page'>
       <LoginForm handleSignupOrLogin={props.handleSignupOrLogin}/>
-    </main>
+    </div>
   )
 }
- 
+
 export default LoginPage
