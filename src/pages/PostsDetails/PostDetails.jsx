@@ -11,6 +11,9 @@ import PostCard from '../../components/Post/PostCard'
 import Layout from '../../components/Layout/Layout'
 import CommentSection from '../../components/Comment/CommentSection'
 import PostDetailsHeader from './PostDetailsHeader'
+import Animation from '../../components/misc/Animation'
+
+import loading from '../../assets/animation/loading.json'
 
 const PostDetails = (props) => {
   const { id } = useParams()
@@ -64,7 +67,9 @@ const PostDetails = (props) => {
           </>
           :
           <div className='loading-container'>
-            <h1>Loading</h1>
+            <div>
+              <Animation animData={loading}></Animation>
+            </div>
           </div>
           }
 
