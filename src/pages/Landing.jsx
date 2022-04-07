@@ -13,6 +13,9 @@ import Feed from '../components/Feed/Feed'
 import CreatePost from '../components/CreateComponents/CreatePost/CreatePost'
 import Layout from '../components/Layout/Layout'
 
+import Animation from '../components/misc/Animation'
+import loading from '../assets/animation/loading.json'
+
 const Landing = (props) => {
     const [posts, setPosts] = useState([])
     const [currentPage, setCurrentPage] = useState(0)
@@ -64,7 +67,9 @@ const Landing = (props) => {
     useEffect(() => {
     const fetchPaginatedPosts = async () => {
         const paginatedPosts = await getPaginatedPosts(currentPage)
-        setPosts(paginatedPosts)
+        setTimeout(() => {
+            setPosts(paginatedPosts)
+        }, 1000)
     }
     fetchPaginatedPosts()
     return () => { setPosts([]) }
@@ -75,6 +80,7 @@ const Landing = (props) => {
 
     <Layout {...props}>
         <div className="layout">
+            
             {props.toggleFeed ?
                 <Feed
                     posts={posts}
@@ -98,7 +104,13 @@ const Landing = (props) => {
                     handleCreatePost={handleCreatePost}
                     setToggleFeed={props.setToggleFeed}
                 />
-            }
+            } 
+            <div className='loading-container'>
+            <div>
+              <Animation animData={loading}></Animation>
+            </div>
+          </div>
+            
         </div>
         
     </Layout>
