@@ -3,6 +3,9 @@ import { Link, useHistory } from 'react-router-dom'
 import './Auth.css'
 import * as authService from '../../services/authService'
 
+import Animation from '../../components/misc/Animation'
+import signupLottie from '../../assets/animation/signupLottie.json'
+
 const SignupForm = (props) => {
   const history = useHistory()
   const [authError, setAuthError] = useState(false)
@@ -104,14 +107,17 @@ const SignupForm = (props) => {
             </div>
           </form>
           <div className="redirect-container">
-                        <p>Already have an account?</p>
-                        <Link className="redirect-link" to="/login">
-                            <p>Login</p>
-                        </Link>
+              <p>Already have an account?</p>
+              <Link className="redirect-link" to="/login">
+                  <p>Login</p>
+              </Link>
 
-                    </div>
+          </div>
         </div>
       </div>
+      <div className="right-container">
+                <Animation animData={signupLottie}/>
+            </div>
     </>
   )
 }
