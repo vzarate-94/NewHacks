@@ -22,7 +22,7 @@
   height: 90vh;
   overflow-y: scroll;
   position: relative;  
-  background-color: rgb(255, 237, 237);
+  background: white;
 }
 
 .side-panel{
@@ -30,7 +30,7 @@
   flex-direction: column;
   width: 20%;
   min-height: 100vh;
-  background: rgb(255, 237, 237);
+  background: white;
   padding: 10px 10px 94px 10px;
 }
 
@@ -40,7 +40,7 @@
   align-items: center;
   width: 23%;
   min-height: 100vh;
-  background: rgb(255, 237, 237);
+  background: white;
   padding: 10px 10px 94px 10px;
 }
 
