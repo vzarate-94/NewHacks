@@ -9,12 +9,7 @@ const PostActions = (props) => {
     return (
         props.currentUser?._id === props.post.added_by?._id &&
         <div className="interactions">
-
-            <button
-                onClick={() => props.handleDeletePost(props.post._id)}
-            >
-                Delete
-            </button>
+            <button onClick={() => props.handleDeletePost(props.post._id)}>Delete</button>
         </div>
     )
 

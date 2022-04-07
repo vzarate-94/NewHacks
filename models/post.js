@@ -24,6 +24,9 @@ const postSchema = new Schema({
   videoUrl: {
     type: String,
   },
+  tiktokUrl: {
+    type: String,
+  },
   added_by: { 
     type: mongoose.Schema.Types.ObjectId, 
     ref: 'User' },

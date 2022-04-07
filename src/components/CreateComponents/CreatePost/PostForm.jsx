@@ -37,6 +37,18 @@ const PostForm = (props) => {
                     name='videoUrl'
                     value={props.videoUrl}
                     onChange={e => props.setVideoUrl(e.target.value)} />
+                    <input 
+                    autoComplete='off'
+                    placeholder='TikTok URL'
+                    name='tiktokUrl'
+                    value={props.tiktokUrl}
+                    onChange={e => props.setTiktokUrl(e.target.value)} />
+                    <input 
+                    autoComplete='off'
+                    placeholder='Video URL'
+                    name='videoUrl'
+                    value={props.imgUrl}
+                    onChange={e => props.setimgUrl(e.target.value)} />
                 </div>
 
                 <div className="border"></div>

@@ -108,3 +108,16 @@
 .comment-link a {
   text-decoration: none;
 }
+
+.stack-top{
+  z-index: 9;
+  margin: 20px; /* for demo purpose  */
+}
+
+.tiktok {
+  display: flex;
+  position: relative;
+  
+  justify-content: center;
+
+}
