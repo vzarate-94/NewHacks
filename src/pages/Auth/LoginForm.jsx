@@ -1,39 +1,45 @@
 import React, { useState } from 'react'
 import { Link, useHistory } from 'react-router-dom'
-import styles from './LoginForm.module.css'
+import './Auth.css'
 import * as authService from '../../services/authService'
 
 const LoginForm = (props) => {
   const history = useHistory()
+  const [authError, setAuthError] = useState(false)
   const [formData, setFormData] = useState({
     email: '',
     password: '',
   })
 
-  const handleChange = evt => {
-    setFormData({ ...formData, [evt.target.name]: evt.target.value })
-  }
 
-  const handleSubmit = evt => {
+  const handleSubmit = async (evt) => {
     evt.preventDefault()
-    authService.login(formData)
-    .then(() => {
+    try {
+      await authService.login(formData)
+    
       props.handleSignupOrLogin()
       history.push('/')
-    })
-    .catch(err => {
-      alert('Invalid Credentials')
-    })
+    } catch (error) {
+      setAuthError(error.message)
+      setFormData({
+        email: '',
+        password: '',
+      })
+    }
+  } 
+
+  const handleChange = evt => {
+    setFormData({ ...formData, [evt.target.name]: evt.target.value })
   }
 
   return (
     <form
       autoComplete="off"
       onSubmit={handleSubmit}
-      className={styles.container}
+      className="container"
     >
-      <div className={styles.inputContainer}>
-        <label htmlFor="email-input" className={styles.label}>
+      <div className="inputContainer">
+        <label htmlFor="email-input" className="label">
           Email
         </label>
         <input
@@ -45,8 +51,8 @@ const LoginForm = (props) => {
           onChange={handleChange}
         />
       </div>
-      <div className={styles.inputContainer}>
-        <label htmlFor="password-input" className={styles.label}>
+      <div className="inputContainer">
+        <label htmlFor="password-input" className="label">
           Password
         </label>
         <input
@@ -59,7 +65,7 @@ const LoginForm = (props) => {
         />
       </div>
       <div>
-        <button className={styles.button}>Log In</button>
+        <button className="button">Log In</button>
         <Link to="/">
           <button>Cancel</button>
         </Link>
