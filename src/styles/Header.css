@@ -1,6 +1,4 @@
 .hidden-container {
-  width: inherit;
-  position: fixed;
   background: rgb(255, 237, 237);
   padding: 10px 10px 0px 10px;
 }

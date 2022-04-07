@@ -28,7 +28,7 @@ const Leaderboard = (props) => {
         <div className="leaderboard">
             <div className="user-list-container">
                 <div className="user-list-header">
-                    <h3>Top Users</h3>
+                    <h3>Categories</h3>
                 </div>
                 {userList?.map((user) => (
         <div className="leader-card" key={user._id}>
