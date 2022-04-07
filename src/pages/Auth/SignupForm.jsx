@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useHistory } from 'react-router-dom'
 import './Auth.css'
-import * as authService from '../../services/authService'
+import { signup} from '../../services/authService'
 
 import Animation from '../../components/misc/Animation'
 import signupLottie from '../../assets/animation/signupLottie.json'
@@ -22,16 +22,21 @@ const SignupForm = (props) => {
     setFormData({ ...formData, [evt.target.name]: evt.target.value })
   }
 
-  const handleSubmit = evt => {
+  const handleSubmit = async evt => {
     evt.preventDefault()
-    authService.signup(formData)
-    .then(() => {
+    try {
+      await signup(formData)
       props.handleSignupOrLogin()
       history.push('/')
-    })
-    .catch(err => {
-      props.updateMessage(err.message)
-    })
+    } catch (error) {
+      setAuthError(error.message)
+      setFormData({
+        handle: '',
+        email: '',
+        password: '',
+        passwordConf: ''
+      })
+    }
   }
 
   useEffect(() => {

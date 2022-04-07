@@ -12,6 +12,7 @@ const Feed = (props) => {
         <PostList
             {...props}
         />
+        <Pagination {...props} />
     </>
   )
 }

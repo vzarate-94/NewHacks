@@ -4,7 +4,6 @@ import { usePrevious } from '../hooks/usePrevious'
 import {
     getPaginatedPosts,
     createPost,
-    updatePost,
     deletePost
 } from '../services/postService'
 

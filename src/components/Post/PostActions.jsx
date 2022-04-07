@@ -4,8 +4,6 @@ import '../../styles/Card.css'
 
 const PostActions = (props) => {
 
-    console.log(props)
-
     return (
         props.currentUser?._id === props.post.added_by?._id &&
         <div className="interactions">
