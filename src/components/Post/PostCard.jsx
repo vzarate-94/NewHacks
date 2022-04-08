@@ -7,6 +7,7 @@ import '../../styles/Card.css'
 
 // Components
 import PostActions from './PostActions'
+import UserCard from '../misc/UserCard/UserCard'
 
 
 const PostCard = (props) => {
@@ -20,6 +21,8 @@ return (
             <PostActions {...props} />
         </div>
         <div className="question-container stack-top">
+            
+            <UserCard user={props.post.added_by} />
             <h3>{props.post.title}</h3>
             <p>{props.post.hackDescription}</p>
         </div>

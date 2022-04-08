@@ -1,7 +1,6 @@
 .user-card{
   display: flex;
   align-items: center;
-  padding-left: 10px;
 }
 
 .user-card img{
@@ -16,7 +15,6 @@
   flex-direction: column;
   align-items: flex-start;
   margin: 0;
-  padding: 10px 10px 10px 15px;
 }
 
 .user-info * {
@@ -26,6 +24,10 @@
 
 .user-info h4 {
   margin-bottom: 2px;
+}
+
+#userName {
+  color: rgb(244, 138, 57);
 }
 
 .user-info p {

@@ -6,11 +6,9 @@ function UserCard(props) {
 
   return (
     user &&
-    <div className='user-card'>
-      <div className='user-info'>
-        <h4>{user.name}</h4>
-
-      </div>
+    <div className='user-info'>
+      
+        <h4>Posted By: <strong id='userName'>{user.handle}</strong></h4>
 
     </div>
   )
