@@ -36,7 +36,7 @@ const LoginForm = (props) => {
   }
 
   return (
-    <>
+    <div className='signup-page'>
       <div className='left-container'>
         <div className='form-container'>
           <div className="title-container">
@@ -85,7 +85,7 @@ const LoginForm = (props) => {
           <Animation animData={signupLottie}></Animation>
 
         </div>
-    </>
+    </div>
   )
 }
  
