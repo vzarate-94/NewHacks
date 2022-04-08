@@ -1,16 +1,22 @@
 .nav-bar{
-  height: 70px;
+height: 70px;
 display: flex;
 align-items: center;
 border-bottom: 1px solid #292934;
 padding: 10px 35px 10px 35px;
-background: #12121b;
+background: #282828;
+color: #FFFFFF;
 }
 
 .logo {
 display: flex;
 align-items: center;
 text-decoration: none;
+color: #FFFFFF;
+}
+
+.logo:hover {
+  color: blue;
 }
 
 .logo h3 {

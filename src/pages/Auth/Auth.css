@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: center;
   border-right: 1px solid #292934;
-  background: #12121b;
+  background: #181818;
 }
 
 .right-container{
@@ -17,7 +17,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #0B0B12;
+  background: #181818;
 }
 
 .title-container{
@@ -64,13 +64,13 @@
 .form-container input {
   border: 1px solid #292934;
   border-radius: 7px;
-  background: #0B0B12;
+  background: #181818;
 }
 
 #avatar-button {
   border: 1px solid #292934;
   border-radius: 7px;
-  background: #0B0B12;
+  background: #181818;
   color: #757575;
   text-align: left;
 }

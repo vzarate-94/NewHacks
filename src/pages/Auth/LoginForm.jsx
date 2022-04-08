@@ -75,7 +75,7 @@ const LoginForm = (props) => {
           </form>
             <div className='redirect-container'>
               <p>Need an account?</p>
-              <Link className='redirect-link' to="/">
+              <Link className='redirect-link' to="/signup">
                 <p>Sign Up</p>
               </Link>
             </div>

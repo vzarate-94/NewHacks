@@ -1,5 +1,5 @@
 .hidden-container {
-  background: white;
+  background: #181818;
   padding: 10px 10px 0px 10px;
 }
 
@@ -8,10 +8,10 @@
   height: 50px;
   display: flex;
   align-items: center;
-  background: white;
+  background: #282828;
   box-sizing: border-box;
   border: 1px solid #26262b;
-  color: #0e0e16;
+  color: #FFFFFF;
   border-radius: 8px 8px 0px 0px;
 }
 
@@ -33,7 +33,7 @@
   margin: 0px 0px 0px 10px;
   padding: 8px 15px 8px 15px;
   border: 1px solid #292934;
-  color: #0e0e16;
+  color: #FFFFFF;
 }
 
 .search-container {
@@ -62,7 +62,7 @@
   .search input {
     background: none;
     border: none;
-    color: white;
+    color: #181818;
     font-size: 16px;
     padding-left: 10px;
     margin: 0;

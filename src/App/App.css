@@ -7,12 +7,13 @@
 #root{
   overflow-y: hidden;
   height: 100vh;
+  background-color: #181818;
 }
 
 .home-page{
   display: flex;
   width: 100vw;
-  background-color: rgb(255, 237, 237);
+  background-color: #181818;
 }
 
 .layout{
@@ -22,7 +23,7 @@
   height: 90vh;
   overflow-y: scroll;
   position: relative;  
-  background: white;
+  background: #181818;
 }
 
 .side-panel{
@@ -30,7 +31,7 @@
   flex-direction: column;
   width: 20%;
   min-height: 100vh;
-  background: white;
+  background: #181818;
   padding: 10px 10px 94px 10px;
 }
 
@@ -40,7 +41,7 @@
   align-items: center;
   width: 23%;
   min-height: 100vh;
-  background: white;
+  background: #181818;
   padding: 10px 10px 94px 10px;
 }
 
