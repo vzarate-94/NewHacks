@@ -34,9 +34,9 @@
 }
 
 .menu-items button {
-  color: white;
-  background: #12121b;
-  border: 1px solid #292934;
+  color: #FFFFFF;
+  background: #282828;
+  border: 2px solid #404040;
   border-radius: 8px;
   padding: 10px;
 }
