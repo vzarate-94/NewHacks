@@ -19,9 +19,7 @@ const PostForm = (props) => {
                     onChange={e => props.setTitle(e.target.value)}
                 />
 
-                <div className="border"></div>
-
-                <div className='code-promt'>
+                
                   <input 
                     required
                     autoComplete='off'
@@ -29,7 +27,7 @@ const PostForm = (props) => {
                     name='hackDescription'
                     value={props.hackDescription}
                     onChange={e => props.setHackDescription(e.target.value)} />
-                </div>
+                
                 <div>
                 <input 
                     autoComplete='off'
