@@ -28,7 +28,7 @@ const PostForm = (props) => {
                     value={props.hackDescription}
                     onChange={e => props.setHackDescription(e.target.value)} />
                 
-                <div>
+                <div className='url-inputs'>
                 <input 
                     autoComplete='off'
                     placeholder='Video URL'
@@ -43,8 +43,8 @@ const PostForm = (props) => {
                     onChange={e => props.setTiktokUrl(e.target.value)} />
                     <input 
                     autoComplete='off'
-                    placeholder='Video URL'
-                    name='videoUrl'
+                    placeholder='Image Source URL'
+                    name='imgUrl'
                     value={props.imgUrl}
                     onChange={e => props.setimgUrl(e.target.value)} />
                 </div>

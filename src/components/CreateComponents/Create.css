@@ -63,6 +63,13 @@
   padding: 12px 16px 12px 16px;
 }
 
+.url-inputs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 
 #plus-button {
   margin: 0;
