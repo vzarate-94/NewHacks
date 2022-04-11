@@ -11,7 +11,7 @@ const CreatePost = (props) => {
     const [hackDescription, setHackDescription] = useState('')
     const [videoUrl, setVideoUrl] = useState('')
     const [tiktokUrl, setTiktokUrl] = useState('')
-    const [imgUrl, setImgUrl] = useState('')
+    const [imageUrl, setImageUrl] = useState('')
 
     console.log(title)
 
@@ -23,7 +23,7 @@ const CreatePost = (props) => {
             added_by: props.currentUser._id, // who created the post
             videoUrl: videoUrl,
             tiktokUrl: tiktokUrl,
-            imgUrl: imgUrl,
+            imageUrl: imageUrl,
         }
         props.handleCreatePost(formData) // pass the formData up to Home.jsx
     }
@@ -46,8 +46,8 @@ const CreatePost = (props) => {
                 tiktokUrl={tiktokUrl}
                 setTiktokUrl={setTiktokUrl}
 
-                imgUrl={imgUrl}
-                setImgUrl={setImgUrl}
+                imgUrl={imageUrl}
+                setImgUrl={setImageUrl}
 
                 setTitle={setTitle}
                 handleSubmit={handleSubmit}

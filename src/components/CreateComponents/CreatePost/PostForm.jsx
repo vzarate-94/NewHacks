@@ -44,9 +44,9 @@ const PostForm = (props) => {
                     <input 
                     autoComplete='off'
                     placeholder='Image Source URL'
-                    name='imgUrl'
-                    value={props.imgUrl}
-                    onChange={e => props.setimgUrl(e.target.value)} />
+                    name='imageUrl'
+                    value={props.imageUrl}
+                    onChange={e => props.setImageUrl(e.target.value)} />
                 </div>
 
                 <div className="border"></div>

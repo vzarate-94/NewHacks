@@ -33,7 +33,9 @@ return (
             {props.post.tiktokUrl?
             <span className='tiktok'>
                 <TikTok url={props.post.tiktokUrl} />
-            </span>: <p>.</p>}
+            </span>: <p></p>}
+            {props.post.imageUrl?
+            <div> <img src={props.post.imageUrl} alt="" /></div> : <p></p>}
         
         <div className="comment-link">
                 <Link to={`/post/${props.post._id}`}>View Comments</Link>
