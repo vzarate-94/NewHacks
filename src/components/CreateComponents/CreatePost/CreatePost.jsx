@@ -46,8 +46,8 @@ const CreatePost = (props) => {
                 tiktokUrl={tiktokUrl}
                 setTiktokUrl={setTiktokUrl}
 
-                imgUrl={imageUrl}
-                setImgUrl={setImageUrl}
+                imageUrl={imageUrl}
+                setImageUrl={setImageUrl}
 
                 setTitle={setTitle}
                 handleSubmit={handleSubmit}
