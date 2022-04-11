@@ -75,12 +75,18 @@
   background: #181818;
 }
 
-#avatar-button {
-  border: 1px solid #292934;
+#cancel-button {
+  margin-top: 2px;
+  background: #404040;
+  border: 3px solid #404040;
+  color: #FFFFFF;
+  font-weight: 600;
   border-radius: 7px;
-  background: #181818;
-  color: #757575;
-  text-align: left;
+}
+
+#cancel-button:hover {
+  background-color: #181818;
+  border: 3px solid #FFFFFF;
 }
 
 #submit-button{

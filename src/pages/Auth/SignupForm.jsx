@@ -105,9 +105,9 @@ const SignupForm = (props) => {
                 placeholder="Confirm Password"
               />
             <div className='inputContainer'>
-              <button disabled={validForm} className='button'>Sign Up</button>
+              <button disabled={validForm} className='button' id="submit-button">Sign Up</button>
               <Link to="/">
-                <button>Cancel</button>
+                <button className='button' id ='cancel-button'>Cancel</button>
               </Link>
             </div>
           </form>
