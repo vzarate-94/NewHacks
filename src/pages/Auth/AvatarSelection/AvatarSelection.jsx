@@ -18,19 +18,19 @@ function AvatarSelection(props) {
       <div className='popup-menu'>
         <div className='popup-header'>
           <h3>Select An Avatar</h3>
-          <button id='close-button' onClick={props.handlePopup}>X</button>
+          <button id='close-button' className='' onClick={props.handlePopup}>X</button>
         </div>
         <img src={props.formData.avatar} alt="profile-Avatar"></img>
         <div className='bottom-ui'>
           <select onChange={(e) => props.handleChange(e)} name="avatar" value={props.formData.avatar}>
-            <option value={curlyHair}>Woman 1</option>
             <option value={beard}>Man 1</option>
-            <option value={girl}>Woman 2</option>
             <option value={man}>Man 2</option>
-            <option value={teacher}>Woman 3</option>
             <option value={boy}>Man 3</option>
-            <option value={woman}>Woman 4</option>
             <option value={blueBoy}>Man 4</option>
+            <option value={curlyHair}>Woman 1</option>
+            <option value={girl}>Woman 2</option>
+            <option value={teacher}>Woman 3</option>
+            <option value={woman}>Woman 4</option>
             <option value={blonde}>Woman 5</option>
           </select>
           <button onClick={props.handlePopup} type="button">Confirm</button>

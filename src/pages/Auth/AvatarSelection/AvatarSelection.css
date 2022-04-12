@@ -64,7 +64,7 @@
 }
 
 .popup-menu button {
-  background: #7450E9;
+  background: #5e2ffb;
   border: none;
   color: white;
   font-weight: 600;
@@ -78,4 +78,12 @@
   padding: 14px 14px 20px 14px;
   margin-top: auto;
   box-sizing: border-box;
+}
+
+#avatar-button {
+  background: #eb643f;
+  border: none;
+  color: white;
+  font-weight: 600;
+  border-radius: 7px;
 }
