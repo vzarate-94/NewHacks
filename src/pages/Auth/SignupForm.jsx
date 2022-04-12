@@ -5,8 +5,12 @@ import { signup} from '../../services/authService'
 
 import Animation from '../../components/misc/Animation'
 import signupLottie from '../../assets/animation/signupLottie.json'
+import AvatarSelection from './AvatarSelection/AvatarSelection'
+
+import beard from '../../assets/avatars/beard.png'
 
 const SignupForm = (props) => {
+  const [popup, setPopup] = useState(false)
   const history = useHistory()
   const [authError, setAuthError] = useState(false)
   const [validForm, setValidForm] = useState(false)
@@ -16,7 +20,12 @@ const SignupForm = (props) => {
     email: '',
     password: '',
     passwordConf: '',
+    avatar: beard,
   })
+
+  const handlePopup = () => {
+    setPopup(!popup)
+}
 
   const handleChange = evt => {
     setFormData({ ...formData, [evt.target.name]: evt.target.value })
@@ -47,6 +56,15 @@ const SignupForm = (props) => {
 
   return (
     <>
+    {popup &&
+                <AvatarSelection
+                    formData={formData}
+                    handleChange={handleChange}
+                    handlePopup={handlePopup}
+                />
+            }
+
+
       <div className='left-container'>
         <div className='form-container'>
           <div className="title-container">
@@ -86,6 +104,11 @@ const SignupForm = (props) => {
                 type="email"
                 placeholder="Email"
               />
+              <button
+                            id="avatar-button"
+                            type="button"
+                            onClick={handlePopup}
+                        >Select Avatar</button>
               <input
                 onChange={handleChange}
                 value={formData.password}

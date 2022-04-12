@@ -8,7 +8,7 @@ import { getUserPosts, deletePost, } from '../../services/postService'
 import PostList from '../../components/Post/PostList'
 
 function Profile(props) {
-  const {_id, name, handle} = props.currentUser || {}
+  const {_id, name, handle, avatar} = props.currentUser || {}
 
   const history = useHistory()
   const [userPosts, setUserPosts] = useState([])
@@ -44,6 +44,7 @@ return (
             <div className="profile-user-info">
                 
                 <h3>{name}</h3>
+                <img src={avatar} alt="user avatar"></img>
                 <h3>{handle}</h3>
 
                 <button><Link to="/">Home</Link></button>
