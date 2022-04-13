@@ -10,6 +10,7 @@ import girl from '../../../assets/avatars/girl.png'
 import man from '../../../assets/avatars/man.png'
 import teacher from '../../../assets/avatars/teacher.png'
 import woman from '../../../assets/avatars/woman.png'
+import boy2 from '../../../assets/avatars/boy2.png'
 
 
 function AvatarSelection(props) {
@@ -27,6 +28,7 @@ function AvatarSelection(props) {
             <option value={man}>Man 2</option>
             <option value={boy}>Man 3</option>
             <option value={blueBoy}>Man 4</option>
+            <option value={boy2}>Man5</option>
             <option value={curlyHair}>Woman 1</option>
             <option value={girl}>Woman 2</option>
             <option value={teacher}>Woman 3</option>
