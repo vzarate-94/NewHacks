@@ -50,7 +50,10 @@
 
 .comment-link {
   border-top: 4px solid #404040;
-  padding: 8px 8px 11px 8px;
+  background: #181818;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
 }
 
 .comment-link a {
@@ -98,14 +101,6 @@
   border: 4px solid #404040;
   padding-bottom: 16px;
 }
-
-.comment-link {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  align-self: center;
-}
-
 .comment-link a {
   text-decoration: none;
   color: #FFFFFF;
@@ -119,6 +114,7 @@
   color: white;
   font-weight: 600;
   border-radius: 7px;
+  margin-top: 14px;
 }
 
 .stack-top{
@@ -136,4 +132,24 @@
 
 .post-img {
   width: 100%;
+}
+
+#like-button {
+  align-self: center;
+  background: rgb(236, 116, 79);
+  border: none;
+  color: white;
+  font-weight: 600;
+  border-radius: 7px;
+}
+
+#like-count {
+  color: #FFFFFF;
+  margin-left: 30px;
+}
+
+.like-div {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 14px;
 }
