@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import ReactPlayer from 'react-player'
 import { TikTok } from 'react-tiktok'
 
@@ -8,6 +7,8 @@ import '../../styles/Card.css'
 // Components
 import PostActions from './PostActions'
 import UserCard from '../misc/UserCard/UserCard'
+import Like from '../Like/Like'
+import CommentButton from '../Comment/CommentButton'
 
 
 const PostCard = (props) => {
@@ -37,9 +38,10 @@ return (
             {props.post.imageUrl?
             <div> <img className='post-img' src={props.post.imageUrl} alt="" /></div> : <p></p>}
         
-        <div className="comment-link">
-                <Link to={`/post/${props.post._id}`}>View Comments</Link>
-        </div>
+            <div className="comment-link">
+                <CommentButton {...props}/>
+                <Like />
+            </div>
     </div>
     )
 }

@@ -2,7 +2,9 @@ import React, { useState } from 'react'
 
 function Like() {
   return (
-    <div>Like</div>
+    <div>
+      <button>Like</button>
+      </div>
   )
 }
 
