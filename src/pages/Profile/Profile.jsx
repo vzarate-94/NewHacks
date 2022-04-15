@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Link, useHistory } from 'react-router-dom'
 import './Profile.css'
 
+
 // Services
 import { getUserPosts, deletePost, } from '../../services/postService'
 
@@ -77,6 +78,7 @@ return (
 
             </div>
         </div>
+        
     </div>
 )
 }
