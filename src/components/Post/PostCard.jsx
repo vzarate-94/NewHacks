@@ -7,7 +7,7 @@ import '../../styles/Card.css'
 // Components
 import PostActions from './PostActions'
 import UserCard from '../misc/UserCard/UserCard'
-import Like from '../Like/Like'
+import Like from '../Like/LikeDislikes'
 import CommentButton from '../Comment/CommentButton'
 
 
