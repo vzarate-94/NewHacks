@@ -117,6 +117,10 @@
   margin-top: 14px;
 }
 
+#comment-button:hover {
+  cursor: pointer;
+}
+
 .stack-top{
   z-index: 9;
   margin: 20px; /* for demo purpose  */
@@ -136,11 +140,16 @@
 
 #like-button {
   align-self: center;
-  background: rgb(236, 116, 79);
+  background: none;
   border: none;
   color: white;
   font-weight: 600;
   border-radius: 7px;
+  margin-right: 4px;
+}
+
+#like-button:hover {
+  cursor: pointer;
 }
 
 #like-count {
