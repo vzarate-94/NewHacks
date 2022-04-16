@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, useHistory } from 'react-router-dom'
+import AdSpace from '../../Ads/AdSpace'
 import './SideMenu.css'
 
 const SideMenu = ({ toggleFeed, setToggleFeed, currentUser, handleLogout }) => {
@@ -36,8 +37,9 @@ const SideMenu = ({ toggleFeed, setToggleFeed, currentUser, handleLogout }) => {
                     }
 
                 </div>
-
+                <AdSpace />
             </div>
+            
         </div>
     )
 }
