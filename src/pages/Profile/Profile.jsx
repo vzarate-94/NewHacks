@@ -54,6 +54,8 @@ return (
 
 
                 <button onClick={props.handleLogout}>Sign Out</button>
+
+                <button><Link to="/">Settings</Link></button>
             </div>
         </div>
         <div className="profile-right">
