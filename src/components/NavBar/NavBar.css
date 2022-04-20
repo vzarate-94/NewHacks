@@ -1,5 +1,5 @@
 .nav-bar{
-height: 70px;
+height: 88px;
 display: flex;
 position: relative;
 align-items: center;
@@ -28,8 +28,9 @@ font-family: 'DM Sans', sans-serif;
 }
 
 .logo img{
-height: 24px;
-margin-right: 8px;
+height: 230px;
+padding-top: 10px;
+
 }
 
 .hamburger {

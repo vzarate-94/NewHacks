@@ -23,5 +23,7 @@
   border: 1px solid #292934;
   border-radius: 8px;
   margin: 10px;
-  background: #181818;
+  padding-left: 5%;
+  background: #282828;
+  color: #FFFFFF;
 }
