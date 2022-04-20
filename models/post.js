@@ -18,6 +18,10 @@ const postSchema = new Schema({
   hackDescription: {
     type: String,
   },
+  category: {
+    type: String,
+    required: true
+  },
   imageUrl: {
     type: String,
   },
