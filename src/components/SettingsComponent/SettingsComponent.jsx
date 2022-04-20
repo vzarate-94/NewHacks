@@ -10,7 +10,11 @@ function SettingsComponent(props) {
           <button id='close-button' className='' onClick={props.handlePopup}>X</button>
         </div>
         <div className='bottom-ui'>
-          
+          <span className='night-banner'>
+          <h1>Night Mode:</h1>
+          <button>On/Off</button>
+          </span>
+
           <button onClick={props.handlePopup} type="button">Confirm</button>
 
         </div>

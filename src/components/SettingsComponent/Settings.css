@@ -89,6 +89,16 @@
   border-radius: 7px;
 }
 
-#avatar-button:hover {
-  cursor: pointer;
+.night-banner {
+  display: flex;
+  justify-content: flex-end;
+  color: #FFFFFF;
+  font-size: xx-small;
+  padding-bottom: 5%
+  
+}
+
+.night-banner button {
+  background-color: #eb643f;
+  width: 50%;
 }

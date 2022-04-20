@@ -98,10 +98,6 @@
   border-radius: 7px;
 }
 
-#submit-button:hover {
-  cursor: pointer;
-}
-
 .redirect-container{
   display: flex;
   font-size: 14px;
