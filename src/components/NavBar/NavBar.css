@@ -3,9 +3,9 @@ height: 88px;
 display: flex;
 position: relative;
 align-items: center;
-border-bottom: 4px solid #404040;
+border-bottom: 4px solid #282828;
 padding: 10px 35px 10px 35px;
-background: #282828;
+background: #404040;
 color: #FFFFFF;
 }
 
