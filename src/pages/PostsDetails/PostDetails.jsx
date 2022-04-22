@@ -19,12 +19,13 @@ import loading from '../../assets/animation/loading.json'
 import Animation from '../../components/misc/Animation'
 
 const PostDetails = (props) => {
-  // the useParams hook will match the if from the URL parameters of the current route
+  // the useParams hook will match the post id from the URL parameters of the current route
   const { id } = useParams()
   const [post, setPost] = useState()
   const [commentArray, setCommentArray] = useState([])
 
   const handleDeletePost = async (postId) => {
+    // async promise to delete the post
     try {
       await deletePost(postId)
       // In order for history.push('/') to work you must use withRouter from react-router-dom
@@ -36,6 +37,7 @@ const PostDetails = (props) => {
 
   useEffect(() => {
     const fetchPost = async () => {
+      // async promise with try catch to retrieve the post and the comments.
         try {
             const post = await getPostById(id)
             // Use setTimeout for the Loading animation Lottie to show for a second before the post and comments render on the screen.
@@ -75,6 +77,7 @@ const PostDetails = (props) => {
           </div>
           :
           <div className='loading-container'>
+            {/* The Animaiton component has the styling and speed for the loading animation. Loading animation is lottie file that will play for 1 second while posts and comments are retrieved  */}
             <Animation animData={loading}></Animation>
           </div>
           }
