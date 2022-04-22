@@ -1,6 +1,52 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`CommentBUtton matches Snapshot 1`] = `
+<div
+  className="hidden-container"
+>
+  <div
+    className="header"
+  >
+    <h3>
+      Post Details
+    </h3>
+    <div
+      className="header-buttons"
+    >
+      <button
+        onClick={[Function]}
+      >
+        Back
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`matches Snapshot 1`] = `
+<div
+  className="hidden-container"
+>
+  <div
+    className="header"
+  >
+    <h3>
+      Post Details
+    </h3>
+    <div
+      className="header-buttons"
+    >
+      <button
+        onClick={[Function]}
+      >
+        Back
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`matches Snapshot 2`] = `
 <div
   className="hidden-container"
 >
