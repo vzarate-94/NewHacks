@@ -2,18 +2,21 @@ import React, { useState, useEffect } from 'react'
 import { withRouter, useParams} from 'react-router-dom'
 import './PostDetails.css'
 
+// services
 import {
   getPostById,
   deletePost
 } from '../../services/postService'
 
+// Components
 import PostCard from '../../components/Post/PostCard'
 import Layout from '../../components/Layout/Layout'
 import CommentSection from '../../components/Comment/CommentSection'
 import PostDetailsHeader from './PostDetailsHeader'
-import Animation from '../../components/misc/Animation'
 
+// assets
 import loading from '../../assets/animation/loading.json'
+import Animation from '../../components/misc/Animation'
 
 const PostDetails = (props) => {
   const { id } = useParams()
@@ -34,7 +37,7 @@ const PostDetails = (props) => {
         try {
             const post = await getPostById(id)
             setTimeout(() => {
-                setPost(post)
+                setPost(post )
                 setCommentArray(post.comments)
             }, 1000)
         } catch (error) {
@@ -72,7 +75,6 @@ const PostDetails = (props) => {
             </div>
           </div>
           }
-
         </div>
       </div>
     </Layout>
