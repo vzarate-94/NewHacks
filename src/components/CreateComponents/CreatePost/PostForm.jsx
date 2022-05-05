@@ -27,6 +27,8 @@ const PostForm = (props) => {
                     name='hackDescription'
                     value={props.hackDescription}
                     onChange={e => props.setHackDescription(e.target.value)} />
+
+                <select name="category" id="" placeholder='Choose a Category'></select>
                 
                 <div className='url-inputs'>
                 <input 

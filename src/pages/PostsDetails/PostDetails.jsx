@@ -2,27 +2,33 @@ import React, { useState, useEffect } from 'react'
 import { withRouter, useParams} from 'react-router-dom'
 import './PostDetails.css'
 
+// services
 import {
   getPostById,
   deletePost
 } from '../../services/postService'
 
+// Components
 import PostCard from '../../components/Post/PostCard'
 import Layout from '../../components/Layout/Layout'
 import CommentSection from '../../components/Comment/CommentSection'
 import PostDetailsHeader from './PostDetailsHeader'
+
+// assets
+import loading from '../../assets/animation/loading.json'
 import Animation from '../../components/misc/Animation'
 
-import loading from '../../assets/animation/loading.json'
-
 const PostDetails = (props) => {
+  // the useParams hook will match the post id from the URL parameters of the current route
   const { id } = useParams()
   const [post, setPost] = useState()
   const [commentArray, setCommentArray] = useState([])
 
   const handleDeletePost = async (postId) => {
+    // async promise to delete the post
     try {
       await deletePost(postId)
+      // In order for history.push('/') to work you must use withRouter from react-router-dom
       props.history.push('/')
     } catch (error) {
       throw error
@@ -31,10 +37,12 @@ const PostDetails = (props) => {
 
   useEffect(() => {
     const fetchPost = async () => {
+      // async promise with try catch to retrieve the post and the comments.
         try {
             const post = await getPostById(id)
+            // Use setTimeout for the Loading animation Lottie to show for a second before the post and comments render on the screen.
             setTimeout(() => {
-                setPost(post)
+                setPost(post )
                 setCommentArray(post.comments)
             }, 1000)
         } catch (error) {
@@ -42,6 +50,7 @@ const PostDetails = (props) => {
         }
     }
     fetchPost()
+    // This return function 
     return () => { setPost(null) }
 }, [id])
 
@@ -50,8 +59,9 @@ const PostDetails = (props) => {
       <div className='layout'>
       <PostDetailsHeader {...props} />
         <div className='post-details'>
+           {/* Terneary function below works hand and hand with the setTimeout in the useEffect hook. While the post wait a second to render. The loading lottie animaiton will display on the screen */}
           {post? 
-          <>
+          <div>
             <PostCard
               post={post}
               currentUser={props.currentUser}
@@ -64,19 +74,18 @@ const PostDetails = (props) => {
               commentArray={commentArray}
               setCommentArray={setCommentArray}
             />
-          </>
+          </div>
           :
           <div className='loading-container'>
-            <div>
-              <Animation animData={loading}></Animation>
-            </div>
+            {/* The Animaiton component has the styling and speed for the loading animation. Loading animation is lottie file that will play for 1 second while posts and comments are retrieved  */}
+            <Animation animData={loading}></Animation>
           </div>
           }
-
         </div>
       </div>
     </Layout>
   )
 }
 
+// Export with withRouter to give the back button in the PostDetailsHeader component access to the historys object's properties
 export default withRouter(PostDetails)

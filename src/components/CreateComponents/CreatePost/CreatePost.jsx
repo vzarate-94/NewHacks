@@ -12,6 +12,7 @@ const CreatePost = (props) => {
     const [videoUrl, setVideoUrl] = useState('')
     const [tiktokUrl, setTiktokUrl] = useState('')
     const [imageUrl, setImageUrl] = useState('')
+    const [category, setCategory] = useState('')
 
     console.log(title)
 
@@ -21,6 +22,7 @@ const CreatePost = (props) => {
             title: title, // question input
             hackDescription: hackDescription, // codeblock input
             added_by: props.currentUser._id, // who created the post
+            category: category,
             videoUrl: videoUrl,
             tiktokUrl: tiktokUrl,
             imageUrl: imageUrl,
@@ -39,6 +41,8 @@ const CreatePost = (props) => {
                 hackDescription={hackDescription}
                 setHackDescription={setHackDescription}
 
+                category={category}
+                setCategory={setCategory}
 
                 videoUrl={videoUrl}
                 setVideoUrl={setVideoUrl}
