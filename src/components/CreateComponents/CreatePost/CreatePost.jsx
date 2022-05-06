@@ -39,7 +39,6 @@ const CreatePost = (props) => {
                 hackDescription={hackDescription}
                 setHackDescription={setHackDescription}
 
-
                 videoUrl={videoUrl}
                 setVideoUrl={setVideoUrl}
 

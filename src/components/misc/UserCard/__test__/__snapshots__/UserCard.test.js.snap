@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches Snapshot 1`] = `
+<div
+  data-testid="component-test-1"
+>
+  <div
+    className="user-info"
+  >
+    <h4>
+      Posted By: 
+      <strong
+        id="userName"
+      />
+    </h4>
+  </div>
+</div>
+`;
+
+exports[`matches Snapshot without user 1`] = `
+<div
+  data-testid="component-test-1"
+/>
+`;
