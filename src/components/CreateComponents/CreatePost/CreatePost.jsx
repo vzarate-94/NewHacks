@@ -9,6 +9,7 @@ const CreatePost = (props) => {
     const [toggleCode, setToggleCode] = useState(false)
     const [title, setTitle] = useState('')
     const [hackDescription, setHackDescription] = useState('')
+    const [postCategory, setPostCategory] = useState('')
     const [videoUrl, setVideoUrl] = useState('')
     const [tiktokUrl, setTiktokUrl] = useState('')
     const [imageUrl, setImageUrl] = useState('')
@@ -21,6 +22,7 @@ const CreatePost = (props) => {
             title: title, // question input
             hackDescription: hackDescription, // codeblock input
             added_by: props.currentUser._id, // who created the post
+            postCategory: postCategory,
             videoUrl: videoUrl,
             tiktokUrl: tiktokUrl,
             imageUrl: imageUrl,
@@ -38,6 +40,9 @@ const CreatePost = (props) => {
 
                 hackDescription={hackDescription}
                 setHackDescription={setHackDescription}
+
+                postCategory={postCategory}
+                setPostCategory={setPostCategory}
 
                 videoUrl={videoUrl}
                 setVideoUrl={setVideoUrl}

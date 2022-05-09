@@ -27,7 +27,15 @@ const PostForm = (props) => {
                     name='hackDescription'
                     value={props.hackDescription}
                     onChange={e => props.setHackDescription(e.target.value)} />
-                
+
+                <select value={props.postCategory} onChange={e => props.setPostCategory(e.target.value)}>
+                    <option value="finacne">Finance</option>
+                    <option value="cleaning">Cleaing</option>
+                    <option value="DIY">DIY</option>
+                    <option value="Personal Hygene">Personal Hygene</option>
+                    <option value="Mental Health">Mental Health</option>
+                    <option value="Tech">Tech</option>
+                </select>
                 <div className='url-inputs'>
                 <input 
                     autoComplete='off'
@@ -35,13 +43,13 @@ const PostForm = (props) => {
                     name='videoUrl'
                     value={props.videoUrl}
                     onChange={e => props.setVideoUrl(e.target.value)} />
-                    <input 
+                <input 
                     autoComplete='off'
                     placeholder='TikTok URL'
                     name='tiktokUrl'
                     value={props.tiktokUrl}
                     onChange={e => props.setTiktokUrl(e.target.value)} />
-                    <input 
+                <input 
                     autoComplete='off'
                     placeholder='Image Source URL'
                     name='imageUrl'
