@@ -24,8 +24,8 @@ return (
         <div className="question-container stack-top">
             
             <UserCard user={props.post.added_by} />
-            <h6>Category: {props.post.postCategory}</h6>
-            <h3>{props.post.title}</h3>
+            <p id='categeory-id'><strong>Category: {props.post.postCategory}</strong></p>
+            <h3 id='title-id'>{props.post.title}</h3>
             <p>{props.post.hackDescription}</p>
         </div>
             {props.post.videoUrl? 

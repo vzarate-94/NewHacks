@@ -162,3 +162,14 @@
   justify-content: space-around;
   margin-top: 14px;
 }
+
+#categeory-id {
+  color: #5e2ffb;
+  font-size: x-small;
+}
+
+#title-id {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
