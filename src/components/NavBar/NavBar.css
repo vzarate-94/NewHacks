@@ -44,7 +44,7 @@ display: none;
 
 @media only screen and (max-width: 850px) {
 .nav-bar{
-          height: 70px;
+          height: 88px;
   display: flex;
   align-items: center;
   padding-left: 20px;
