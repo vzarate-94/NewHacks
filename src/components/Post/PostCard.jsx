@@ -24,7 +24,7 @@ return (
         <div className="question-container stack-top">
             
             <UserCard user={props.post.added_by} />
-            <p id='categeory-id'><strong>Category: {props.post.postCategory}</strong></p>
+            <p className='category-id'>Category:<strong id='categeory-name'> {props.post.postCategory}</strong></p>
             <h3 id='title-id'>{props.post.title}</h3>
             <p>{props.post.hackDescription}</p>
         </div>

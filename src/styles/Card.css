@@ -163,9 +163,13 @@
   margin-top: 14px;
 }
 
-#categeory-id {
+.category-id {
+  color: #404040;
+  font-size: xx-small;
+}
+
+#categeory-name {
   color: #5e2ffb;
-  font-size: x-small;
 }
 
 #title-id {
