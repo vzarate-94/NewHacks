@@ -1,9 +1,12 @@
 import React from 'react'
+import discoverAd from '../../assets/images/discoverAd.png'
 import '../Layout/SideMenu/SideMenu.css'
 
 function AdSpace() {
   return (
-    <div className='ad-space'>Your Ad Goes Here!</div>
+    <div>
+      <img id="discover-img" src={discoverAd} alt="Dicover it card advertisement" />
+    </div>
   )
 }
 

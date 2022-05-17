@@ -37,7 +37,9 @@ const SideMenu = ({ toggleFeed, setToggleFeed, currentUser, handleLogout }) => {
                     }
 
                 </div>
-                <AdSpace />
+                <div id='discover-add'>
+                    <AdSpace />
+                </div>
             </div>
             
         </div>
