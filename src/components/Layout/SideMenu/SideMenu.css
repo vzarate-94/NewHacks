@@ -49,11 +49,10 @@
   color: #FFFFFF;
 }
 
-#discover-add {
-  height: 600px;
-  margin-top: -100%;
+#discover-ad {
+  margin-right: 35%;
 }
 
 #discover-img {
-  width: 190px;
+  width: -50%;
 }
