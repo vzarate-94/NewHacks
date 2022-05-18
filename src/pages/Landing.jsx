@@ -12,9 +12,6 @@ import Feed from '../components/Feed/Feed'
 import CreatePost from '../components/CreateComponents/CreatePost/CreatePost'
 import Layout from '../components/Layout/Layout'
 
-import Animation from '../components/misc/Animation'
-import loading from '../assets/animation/loading.json'
-
 const Landing = (props) => {
     const [posts, setPosts] = useState([])
     const [currentPage, setCurrentPage] = useState(0)
@@ -105,9 +102,6 @@ const Landing = (props) => {
                 />
             } 
             <div className='loading-container'>
-            <div>
-              <Animation animData={loading}></Animation>
-            </div>
           </div>
             
         </div>
