@@ -29,15 +29,12 @@ const SideMenu = ({ toggleFeed, setToggleFeed, currentUser, handleLogout }) => {
                             <button onClick={handleLogout}>Sign Out</button>
                         </>
                         :
-                        <>
-                        <Link to="/login"><button>Login</button></Link>
-                        <Link to="/signup"><button>Sign Up</button></Link>
-                        </>
-
+                            <>
+                            <Link to="/login"><button>Login</button></Link>
+                            <Link to="/signup"><button>Sign Up</button></Link>
+                            </>
                     }
-                    <div id='dicscover-ad'>
-                    <AdSpace />
-                </div>
+                        <AdSpace />
                 </div>
             </div>
             

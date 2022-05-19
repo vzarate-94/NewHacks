@@ -50,9 +50,14 @@
 }
 
 #discover-ad {
-  margin-right: 35%;
+  border-radius: 4%;
+  height: 80%;
+  width: 100%;
 }
 
 #discover-img {
-  width: -50%;
+  object-fit: cover;
+  border-radius: 4%;
+  height: 90%;
+  width: 100%;
 }
