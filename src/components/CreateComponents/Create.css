@@ -52,6 +52,15 @@
   background: #181818;
 }
 
+.create-form select{
+  padding: 15px 10px 15px 10px;
+  border-radius: 8px;
+  border: 1px solid #292934;
+  color: orange;
+  margin-bottom: 10px;
+  background: #181818;
+}
+
 .create-form button {
   border: none;
   color: white;

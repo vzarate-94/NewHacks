@@ -17,6 +17,7 @@
 
 .header h3{
   margin-left: 14px;
+  width: 145px;
 }
 
 .header-buttons {
@@ -41,6 +42,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-left: -12%;
 }
 
 .search {
@@ -52,7 +54,7 @@
     border: 1px solid #292934;
     border-radius: 50px;
     background: #0e0e16;
-    padding: 5px 5px 5px 12px;
+    padding: 5px 5px 5px 14px;
   }
   
   .search-icon{

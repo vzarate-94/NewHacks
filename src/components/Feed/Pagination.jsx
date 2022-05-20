@@ -44,7 +44,7 @@ const Pagination = (props) => {
     return (
         <div className="hidden-container">
             <div className="header">
-                <h3>{!hasSearchRun ? 'Recent' : `Search Results: ${keyword}`}</h3>
+                <h3>{!hasSearchRun ? 'Recent Posts' : `Search Results: ${keyword}`}</h3>
 
                 {!hasSearchRun &&
                     <Search

@@ -30,11 +30,12 @@ const PostForm = (props) => {
 
                 <select value={props.postCategory} onChange={e => props.setPostCategory(e.target.value)}>
                     <option value="finacne">Finance</option>
-                    <option value="cleaning">Cleaing</option>
+                    <option value="cleaning">Cleaning</option>
                     <option value="DIY">DIY</option>
                     <option value="Personal Hygene">Personal Hygene</option>
                     <option value="Mental Health">Mental Health</option>
                     <option value="Tech">Tech</option>
+                    <option value="Tech">Travel</option>
                 </select>
                 <div className='url-inputs'>
                 <input 
