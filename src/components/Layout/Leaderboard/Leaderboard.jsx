@@ -1,4 +1,5 @@
 import React from 'react'
+import AdSpace from '../../Ads/AdSpace'
 import './Leaderboard.css'
 
 // Services
@@ -21,6 +22,7 @@ const Leaderboard = (props) => {
                     <h5>Mental Health</h5>
                     <h5>Technology</h5>
                 </div>
+                <AdSpace />
             </div>
         </div>
     )
