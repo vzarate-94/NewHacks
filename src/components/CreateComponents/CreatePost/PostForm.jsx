@@ -35,7 +35,7 @@ const PostForm = (props) => {
                     <option value="Personal Hygene">Personal Hygene</option>
                     <option value="Mental Health">Mental Health</option>
                     <option value="Tech">Tech</option>
-                    <option value="Tech">Travel</option>
+                    <option value="Travel">Travel</option>
                 </select>
                 <div className='url-inputs'>
                 <input 
