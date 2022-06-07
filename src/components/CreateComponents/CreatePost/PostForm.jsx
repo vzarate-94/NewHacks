@@ -29,13 +29,14 @@ const PostForm = (props) => {
                     onChange={e => props.setHackDescription(e.target.value)} />
 
                 <select value={props.postCategory} onChange={e => props.setPostCategory(e.target.value)}>
-                    <option value="Finacne">Finance</option>
+                    <option value="Finance">Finance</option>
                     <option value="Cleaning">Cleaning</option>
                     <option value="DIY">DIY</option>
                     <option value="Personal Hygene">Personal Hygene</option>
                     <option value="Mental Health">Mental Health</option>
                     <option value="Tech">Tech</option>
                     <option value="Travel">Travel</option>
+                    <option value="Shoping">Shoping</option>
                     <option value="Other">Other</option>
                 </select>
                 <div className='url-inputs'>
