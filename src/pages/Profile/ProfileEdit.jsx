@@ -3,7 +3,10 @@ import React, { Component } from 'react'
 export default class ProfileEdit extends Component {
   render() {
     return (
-      <div>ProfileEdit</div>
+      <div>
+        <h1>Edit</h1>
+        <button>Edit</button>
+      </div>
     )
   }
 }
