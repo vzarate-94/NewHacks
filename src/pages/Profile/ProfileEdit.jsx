@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class ProfileEdit extends Component {
-  render() {
+const ProfileEdit = (props) =>  {
+  
     return (
       <div>
         <h1>Edit</h1>
@@ -9,7 +9,10 @@ export default class ProfileEdit extends Component {
         <form action="post">
           <label htmlFor="">Hello</label>
         </form>
+        <button>Click Here</button>
+
       </div>
     )
   }
-}
+
+export default ProfileEdit
