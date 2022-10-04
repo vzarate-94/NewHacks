@@ -25,7 +25,7 @@ const Leaderboard = (props) => {
                     <h5>Travel</h5>
                     <h5>Other</h5>
                 </div>
-                <AdSpace />
+                
             </div>
         </div>
     )
