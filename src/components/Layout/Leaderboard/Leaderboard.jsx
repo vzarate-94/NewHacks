@@ -21,8 +21,9 @@ const Leaderboard = (props) => {
                     <h5>DIY</h5>
                     <h5>Personal Health</h5>
                     <h5>Mental Health</h5>
-                    <h5>Technology</h5>
+                    <h5>Tech</h5>
                     <h5>Travel</h5>
+                    <h5>Funny</h5>
                     <h5>Other</h5>
                 </div>
                 
