@@ -1,13 +1,8 @@
 import React from 'react'
-
 import './Leaderboard.css'
 
 // Services
-
-
-
 const Leaderboard = (props) => {
-
 
     return (
         <div className="leaderboard">
