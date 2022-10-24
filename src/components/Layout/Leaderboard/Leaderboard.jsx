@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link} from 'react-router-dom'
 import './Leaderboard.css'
 
 // Services
@@ -11,7 +12,8 @@ const Leaderboard = (props) => {
                     <h3>Categories</h3>
                 </div>
                 <div className="leader-card" >
-                    <h5>Finance</h5>
+                    <Link className='redirect-link' to="/finance">
+                    <h5>Finance</h5></Link>
                     <h5>Cleaning</h5>
                     <h5>DIY</h5>
                     <h5>Personal Health</h5>
