@@ -65,7 +65,6 @@ const App = () => {
 					toggleFeed={toggleFeed}
 					setToggleFeed={setToggleFeed}
 					/>
-					<h1>WOrking?</h1>
 			</Route>
 
 			<Route path='/signup'>
