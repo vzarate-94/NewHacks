@@ -4,7 +4,7 @@ import './Auth.css'
 
 const LoginPage = (props) => {
   return (
-    <div className='signup-page'>
+    <div>
       <LoginForm handleSignupOrLogin={props.handleSignupOrLogin}/>
     </div>
   )
