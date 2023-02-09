@@ -10,6 +10,14 @@ const commentSchema = new Schema({
   commenter: { type: mongoose.Schema.ObjectId, ref: 'User' },
 }, { timestamps: true })
 
+const likesSchema = new Schema({
+  likes: {
+    type: Number,
+    Required: true
+  },
+  liker: { type: mongoose.Schema.ObjectId, ref: 'User' },
+}, { timestamps: true })
+
 const postSchema = new Schema({
   title: {
     type: String, 
@@ -34,6 +42,7 @@ const postSchema = new Schema({
     type: mongoose.Schema.Types.ObjectId, 
     ref: 'User' },
   comments: [commentSchema],
+  likes:[likesSchema],
   }, { timestamps: true })
 
 

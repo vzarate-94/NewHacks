@@ -11,19 +11,7 @@ import CommentButton from '../Comment/CommentButton'
 
 
 const PostCard = (props) => {
-    const [likes, setLikes] = useState(0)
-    const [liked, setLiked] = useState(false)
-    
-    useEffect(() => {
-        // fetch the number of likes for this post
-        // and update the likes state accordingly
-      }, []);
 
-    const handleLike = () => {
-        // send a request to the backend API to create a new like
-        // in the database, and update the liked state to true
-        // and the likes state to increment by 1
-      };
 
 return (
     
@@ -51,8 +39,7 @@ return (
         
             <div className="comment-link">
                 <CommentButton {...props}/>
-                <button onClick={handleLike}>like</button>
-                <p>{likes} likes</p>
+                
             </div>
     </div>
     )

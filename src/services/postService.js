@@ -102,3 +102,4 @@ export const deletePost = async (postId) => {
         throw error
     }
 }
+
