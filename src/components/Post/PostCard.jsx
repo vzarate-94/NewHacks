@@ -7,7 +7,6 @@ import '../../styles/Card.css'
 // Components
 import PostActions from './PostActions'
 import UserCard from '../misc/UserCard/UserCard'
-import Like from '../Like/LikeDislikes'
 import CommentButton from '../Comment/CommentButton'
 
 
@@ -52,7 +51,8 @@ return (
         
             <div className="comment-link">
                 <CommentButton {...props}/>
-                <Like {...props}/>
+                <button onClick={handleLike}>like</button>
+                <p>{likes} likes</p>
             </div>
     </div>
     )
