@@ -23,6 +23,7 @@ const PostDetails = (props) => {
   const { id } = useParams()
   const [post, setPost] = useState()
   const [commentArray, setCommentArray] = useState([])
+  const [likesArray, setLikesArray] = useState([])
 
   const handleDeletePost = async (postId) => {
     // async promise to delete the post
@@ -44,6 +45,7 @@ const PostDetails = (props) => {
             setTimeout(() => {
                 setPost(post )
                 setCommentArray(post.comments)
+                setLikesArray(post.likes)
             }, 1000)
         } catch (error) {
             throw error
