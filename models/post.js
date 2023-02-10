@@ -11,10 +11,6 @@ const commentSchema = new Schema({
 }, { timestamps: true })
 
 const likesSchema = new Schema({
-  likes: {
-    type: Number,
-    Required: true
-  },
   liker: { type: mongoose.Schema.ObjectId, ref: 'User' },
 }, { timestamps: true })
 

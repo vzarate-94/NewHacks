@@ -4,6 +4,20 @@ const CreateLike = (props) => {
   const [likes, setLikes] = useState(0);
   const [liked, setLiked] = useState(false);
 
+  useEffect(() => {
+    const fetchLikes = async () => {
+      try {
+        const response = await fetch(`/api/post/${props.postId}/likes`);
+        const data = await response.json();
+        setLikes(data.likes);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+    fetchLikes();
+  }, [props.postId]);
+  
+
   const handleLike = async () => {
     try {
       const response = await fetch("/api/post/like", {
