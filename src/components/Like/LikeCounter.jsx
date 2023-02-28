@@ -1,14 +1,13 @@
 import React from 'react'
 
-import CommentCard from './CommentCard'
+import LikeCard from './LikeCard.jsx'
 
 const LikeList = (props) => {
 
   return (
-		props.likeArray.map((comment) => (
-				<CommentCard
-						key={comment._id}
-						comment={comment}
+		props.likeArray.map((like) => (
+				<LikeCard
+						like={like}
 						{...props}
 				/>
 		))

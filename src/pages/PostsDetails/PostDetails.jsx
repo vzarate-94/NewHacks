@@ -13,6 +13,7 @@ import PostCard from '../../components/Post/PostCard'
 import Layout from '../../components/Layout/Layout'
 import CommentSection from '../../components/Comment/CommentSection'
 import PostDetailsHeader from './PostDetailsHeader'
+import LikeCard from '../../components/Like/LikeCard'
 
 // assets
 import loading from '../../assets/animation/loading.json'
@@ -45,7 +46,7 @@ const PostDetails = (props) => {
             setTimeout(() => {
                 setPost(post )
                 setCommentArray(post.comments)
-                setLikesArray(post.likes)
+                // setLikesArray(post.likes.length)
             }, 1000)
         } catch (error) {
             throw error
@@ -76,6 +77,12 @@ const PostDetails = (props) => {
               commentArray={commentArray}
               setCommentArray={setCommentArray}
             />
+            {/* <LikeCard
+              post={post}
+              setPost={setPost}
+              currentUser={props.currentUser}
+              likeArray={likesArray}
+              setLikesArray={setLikesArray}/> */}
           </div>
           :
           <div className='loading-container'>
